@@ -2,7 +2,7 @@
 import { navItems } from "@/lib/constants";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
-// import MobileNavigtaion from "./MobileNavigation";
+import MobileNavigtaion from "./MobileNavigation";
 
 export default function Navigation() {
   return (
@@ -30,10 +30,7 @@ export default function Navigation() {
             ))}
             <ModeToggle />
           </div>
-
-          {/* Mobile nav */}
-
-          {/* <MobileNavigtaion /> */}
+          <MobileNavigtaion />
         </div>
       </div>
     </nav>

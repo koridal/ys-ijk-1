@@ -22,19 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Navigation />
-        {children}
-          </ThemeProvider>
-        
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navigation />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
